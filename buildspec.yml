@@ -6,8 +6,7 @@ phases:
        dotnet: 2.2
   build:
     commands:
-      - dotnet publish src/Server/Host/PBWeb.Server/PBWeb.Server.csproj --configuration Release --output "../../../../Output/Server"
-      - dotnet publish src/Novitas.Pension.Web/Novitas.Pension.Web.csproj --configuration Release --output "../../Output/Application"
+      - dotnet publish src/OrchardCore.Cms.Web/OrchardCore.Cms.Web.csproj --configuration Release --output "../../Output"
       
       #- dotnet build src/Server/Host/PBWeb.Server/PBWeb.Server.csproj /nologo /p:PublishProfile=Release /p:PackageLocation="..\..\..\..\output" /p:OutDir="..\..\..\..\out\server" /p:DeployOnBuild=true /p:PackageAsSingleFile=true /p:configuration="Release"
       #- dotnet build src/Novitas.Pension.Web/Novitas.Pension.Web.csproj /nologo /p:PublishProfile=Release /p:PackageLocation="..\..\..\..\output" /p:OutDir="..\..\..\..\out\application" /p:DeployOnBuild=true /p:PackageAsSingleFile=true /p:configuration="Release"
