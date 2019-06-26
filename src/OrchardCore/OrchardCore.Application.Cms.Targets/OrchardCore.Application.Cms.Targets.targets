@@ -1,11 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <ItemGroup>
+  <!--<ItemGroup>
     <Compile Remove="App_Data\**" />
     <Content Remove="App_Data\**" />
     <EmbeddedResource Remove="App_Data\**" />
     <None Remove="App_Data\**" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <ItemGroup>
     <ResolvedFileToPublish Include="App_Data\**" Exclude="App_Data\**\*.log">

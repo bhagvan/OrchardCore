@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="App_Data\Sites\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

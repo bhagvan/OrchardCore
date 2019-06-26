@@ -1,3 +1,4 @@
+using System.Net;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using OrchardCore.Logging;
@@ -12,6 +13,10 @@ namespace OrchardCore.Cms.Web
 
         public static IWebHost BuildWebHost(string[] args)
             => CreateWebHostBuilder(args)
+                .UseKestrel(options: options =>
+                {
+                    options.Listen(IPAddress.Any, 443);
+                })
                 .Build();
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
