@@ -10,7 +10,34 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="App_Data\Sites\" />
+    <Compile Remove="App_Data\logs\**" />
+    <Content Remove="App_Data\logs\**" />
+    <EmbeddedResource Remove="App_Data\logs\**" />
+    <None Remove="App_Data\logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Data\Sites\Default\DataProtection-Keys\key-dfdd9869-8a6b-47af-bfec-998e69068a79.xml" />
+    <Content Include="App_Data\Sites\Default\Media\about\1.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\about\2.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\about\3.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\about\4.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\logos\creative-market.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\logos\designmodo.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\logos\envato.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\logos\themeforest.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\portfolio\01-full.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\portfolio\02-full.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\portfolio\03-full.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\portfolio\04-full.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\portfolio\05-full.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\portfolio\06-full.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\team\1.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\team\2.jpg" />
+    <Content Include="App_Data\Sites\Default\Media\team\3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -33,5 +60,8 @@
   <Import Project="..\OrchardCore\OrchardCore.Application.Cms.Targets\OrchardCore.Application.Cms.Targets.targets" />
   <Import Project="..\OrchardCore\OrchardCore.Application.Targets\OrchardCore.Application.Targets.targets" />
   <Import Project="..\OrchardCore.Build\OrchardCore.Commons.targets" />
+  <ItemGroup>
+    <ResolvedFileToPublish Remove="App_Data\logs\**" />
+  </ItemGroup>
 
 </Project>
